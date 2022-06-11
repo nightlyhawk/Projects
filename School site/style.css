@@ -1,0 +1,288 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    /* background-image: url(./1133462.jpg);
+    background-size: cover;
+    background-position: center; */
+    box-sizing: border-box;
+    font-family:  'PT Sans', sans-serif;
+}
+.menu-bar{
+    background-color:azure;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+.active, .menu-bar ul li:hover{
+    background-color: rgb(100, 100, 119);
+    border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: azure;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.sub-menu-2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background-color: azure;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child
+{
+    border-bottom: none;
+}
+.sub-menu-3{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-3
+{
+    display: block;
+    position: absolute;
+    background-color: azure;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-3 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li
+{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li:last-child
+{
+    border-bottom: none;
+}
+.sub-menu-4{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-4
+{
+    display: block;
+    position: absolute;
+    background-color: azure;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-4 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-4 ul li
+{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-4 ul li:last-child
+{
+    border-bottom: none;
+}
+#left{
+    position: relative;
+    right: 6px;
+}
+#left2{
+    position: relative;
+    right: 6px;
+}
+#left3{
+    position: relative;
+    right: 6px;
+}
+#left4{
+    position: relative;
+    right: 6px;
+}
+#right{
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+#right2{
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+#right3{
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+#right4{
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(210, 243, 243);
+}
+#sectone 
+{
+    /* background-color: rgb(104, 94, 94); */
+    /* background-color: transparent; */
+    background-image: url(./images/1133462.jpg);
+    height: 500px;
+    border: 1px solid burlywood;
+    
+}
+#sectwo
+{
+    background-image: url(./images/mas.jpg);
+    height: 500px;
+}
+#secthree
+{
+    background-image: url(./images/pexels-markus-spiske-2004161.jpg);
+    background-position: center;
+    background-size: 2000px;
+    height: 500px;
+}
+#logo
+{
+    width: 60px;
+    height: 60px;
+    background-color: azure;
+    margin-top: 9px;
+}
+.h1{
+    font-size: 80px;
+    margin-left: 20%;
+    color: white;
+   
+    padding-top: 5%;
+
+}
+#h2
+{
+    color: black;
+    position: relative;
+    left: 34px;
+}
+p1{
+    margin-left: 12%;
+    padding-top: 2%;
+    color: white;
+
+}
+#sectwo>p1{
+    position: relative;
+    left: 71px;
+}
+#h3{
+    position: relative;
+    left: 83px;
+}
+#secthree>p1{
+    position: relative;
+    left: 53px;
+}
+#button
+{
+   margin-left: 23%;
+   padding-top: 2%;
+}
+.but
+{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+}
+#butone{
+    margin-left: 7%;
+    background-color: rgb(145, 145, 158);
+    color: white;
+}
+#butone:hover{
+    background-color: rgb(95, 95, 110);
+}
+#buttwo{
+    position: relative;
+    top: 50px;
+    right: 124px;
+    background-color: rgb(212, 243, 167) ;
+}
+#buttwo:hover{
+    background-color: rgb(165, 223, 73);
+
+}
+#butthree{
+    position: relative;
+    top: 100px;
+    right: 248px;
+    background-color:ivory;
+}
+#butthree:hover{
+    background-color: rgb(212, 212, 162);
+}

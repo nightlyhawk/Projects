@@ -1,0 +1,36 @@
+.container{
+    background-color: white;
+    color: grey;
+    text-align: center;
+    height: 50%;
+}
+header{
+    background-color: black;
+    text-align: center;
+}
+.opt{
+    display: flex;
+    flex-direction: column;
+}
+#b
+{
+    position: relative;
+    left: 10px;
+}
+#c
+{
+    position: relative;
+    right: 11px;
+}
+button{
+    background-color: rgb(76, 76, 168);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+button:hover{
+    background-color: rgb(149, 149, 207);
+    cursor: pointer;
+}
