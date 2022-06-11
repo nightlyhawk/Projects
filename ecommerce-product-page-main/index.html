@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<nav>
+  <ul id="main_nav">
+    <li id="logo"><a href=""><img src="./images/logo.svg" alt=""></a></li>
+    <ul id="primarynav">
+      <li class="options"><a href="">Collections</a></li>
+    <li class="options"><a href="">Men</a></li>
+    <li class="options"><a href="">Women</a></li>
+    <li class="options"><a href="">About</a></li>
+    <li class="options"><a href="">Contact</a></li>
+    </ul>
+    <ul id="seconav" >
+      <li><a href=""><img src="./images/icon-cart.svg" alt="" id="cart"><div id="amountcart"></div></a></li>
+    <li><a href=""><img src="./images/image-avatar.png"  alt="" id="avatar"></a></li>
+    </ul>
+  </ul>
+</nav>
+
+ <div id="container">
+   <div id="leftcontainer">
+     <div id="display">
+       <img src="./images/image-product-1.jpg" alt="" id="disp">
+     </div>
+     <div id="slides">
+      <a href="#" id="one" onclick="clcik()"><img class="products" src="./images/image-product-1-thumbnail.jpg" alt=""></a>
+      <img class="products" id="two" onclick="clcik()" src="./images/image-product-2-thumbnail.jpg" alt="">
+      <img class="products" id="three" onclick="clcik()" src="./images/image-product-3-thumbnail.jpg" alt="">
+      <img class="products" id="four" onclick="clcik()" src="./images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+   </div>
+ <div id="rightcontainer">
+  <h3 style="font-size: 16px; color: hsl(26, 100%, 55%);">SNEAKER COMPANY</h3>
+    <br>
+  <h2>Fall Limited Edition 
+    <br> Sneakers</h2>
+    <br>
+  <p> These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  </p>
+    <br>
+  <strong style="font-size: 25px;">$125.00</strong>
+  &nbsp;
+  <span id="tagoff">50%</span>
+  <br>
+  <strike style="color: hsl(220, 14%, 75%);;">$250.00</strike>
+   <br>
+  <div id="amount">
+    <a href="" id="minus"><img src="./images/icon-minus.svg" alt=""></a>
+    <span id="count">0</span>
+    <a href=""><img id="plus" src="./images/icon-plus.svg" alt="" onclick="inc()"></a>
+</div>
+  <button type="submit" id="add"><img src="./images/icon-cart.svg" alt=""> Add to cart</button>
+ </div>
+ <div class="modal">
+   <span>×</span>
+   <button><</button>
+   <img src="" alt="">
+   <button>></button>
+   <img src="" alt="">
+   <img src="" alt="">
+   <img src="" alt="">
+   <img src="" alt="">
+ </div>
+</div>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script>
+    const addto = document.getElementById("#add")
+    const dis = document.getElementById('#disp')
+    const prod = document.querySelector("products")
+    const dis1 = document.getElementById("#one")
+    const dis2 = document.getElementById("#two")
+    const dis3 = document.getElementById("#three")
+    const dis4 = document.getElementById("#four")
+    const cartamt = document.getElementById("amountcart")
+    const cartimg = document.getElementById("cart")
+    cart = []
+  addto.addEventListener('click', () =>{
+         cart.push(amount, item)
+  })
+  function inc(){
+    const pluss = getElementById("plus")
+    const amountt = getElementById("amount")
+    let x = amountt.innerHTML
+    amountt.innerHTML = x + 1
+  }
+     
+  //  prod.addEventListener('click', (e) =>{
+  //   //  e = e || window.event;
+  //    var x = e.target
+  //    x.style.border = "3px solid hsl(26, 100%, 55%)"
+  //     dis.src = x.src
+  //  })
+   function clcik(){
+     dis1.style.borderColor = 'black'
+   }
+  //  setInterval( function switc(){
+  //    var displays = [dis1, dis2, dis3, dis4]
+  //    var i
+  //    for( i= 0; i < displays.length; i++){
+  //     displays[i].style.border = '1px solid black'
+  //    }
+  
+  //  }, 1000);
+
+  </script>
+</body>
+</html>

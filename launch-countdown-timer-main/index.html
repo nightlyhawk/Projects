@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Red_Hat_Text/static/RedHatText-Bold.ttf">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body onload="timer()" id="body">
+  <!-- <iframe id="myFrame" src="../launch-countdown-timer-main/index.html"></iframe> -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">George Hawk</a>.
+  </div>
+  <header> WE'RE LAUNCHING SOON </header>
+   <div class="container">
+     <div class="ctndwn" ><p class="top" id="daysqr">14</p></div>
+     <div class="left_semicircle"></div>
+     <div class="right_semicircle"></div>
+     <div class="cctndwn" id="1daysqr">
+       <p class="btm" id="bdaysqr" onchange="flip()">14</p>
+     </div>
+    <span id="dayys">DAYS</span> 
+    <div class="ctndwn">
+      <p class="top" id="hrsqr">24</p>
+    </div>
+    <div class="left_semicircle"></div>
+     <div class="right_semicircle"></div>
+    <div class="cctndwn" id="1hrsqr">
+      <p class="btm" id="bhrsqr" onchange="flip()">24</p>
+    </div>
+    <span id="hrrs">HOURS</span>
+    <div class="ctndwn" >
+      <p class="top" id="minsqr">60</p>
+    </div>
+    <div class="left_semicircle"></div>
+     <div class="right_semicircle"></div>
+    <div class="cctndwn" id="1minsqr">
+      <p class="btm" id="bminsqr" onchange="flip()">60</p>
+    </div>
+    <span id="minns">MINUTES</span>
+    <div class="ctndwn">
+      <p class="top" id="secsqr">60</p>
+    </div>
+    <div class="left_semicircle"></div>
+     <div class="right_semicircle"></div>
+    <div class="cctndwn" id="1secsqr">
+      <p class="btm" id="bsecsqr" onchange="flip()">60</p>
+    </div>
+    <span id="seccs">SECONDS</span>
+    
+   </div>
+  <div class="halfimg" >
+    <img src="./images/pattern-hills.svg" alt="" id="bckgrnd">
+    <div id="footer">
+      <a href=""><img class="links" src="./images/icon-facebook.svg" alt=""></a>
+      &nbsp; &nbsp;
+    <a href=""><img class="links" src="./images/icon-instagram.svg" alt=""></a>
+    &nbsp; &nbsp;
+    <a href=""><img class="links" src="./images/icon-pinterest.svg" alt=""></a>
+    </div>
+  </div>
+  <script>  
+  // $(document).ready(function(){
+  //       timer();
+  // }); 
+  document.getElementById("body").onload = function() {timer()};
+  const byy = document.getElementById("body")
+  const secs = document.querySelector("#secsqr")
+  const bsecs = document.querySelector("#bsecsqr")
+ 
+  const mins = document.querySelector("#minsqr")
+  const bmins = document.querySelector("#bminsqr")
+  
+  const hrs = document.querySelector("#hrsqr")
+  const bhrs = document.querySelector("#bhrsqr")
+  
+  const days = document.querySelector("#daysqr")
+  const bdays = document.querySelector("#bdaysqr")
+  // const top = document.querySelector("ctndwn")
+  const btm = document.querySelector("cctndwn")
+  
+  byy.onload = setInterval(function timer(){
+    // alert('ok');
+  if(secs.innerHTML < 1 && bsecs.innerHTML < 1){
+    secs.innerHTML = 59
+    bsecs.innerHTML = 59
+  }
+  else{
+    let x = secs.innerHTML, bx = bsecs.innerHTML
+    secs.innerHTML = x - 01, bsecs.innerHTML = bx - 01
+  }
+  let x = secs.innerHTML
+  let bx = bsecs.innerHTML
+    if(x == 59 && bx == 59){
+    let y = mins.innerHTML, by = bmins.innerHTML
+    mins.innerHTML = y - 01, bmins.innerHTML = by - 01
+  }else if(y < 1 && by < 1){
+    mins.innerHTML = 59, bmins.innerHTML = 59
+  }
+  let y = mins.innerHTML
+  let by = bmins.innerHTML
+  if ( y == 59 && by == 59){
+    let z = hrs.innerHTML, bz = bhrs.innerHTML
+    hrs.innerHTML = z - 01, bhrs.innerHTML = bz - 01
+  }
+  let z = hrs.innerHTML
+  let bz = bhrs.innerHTML
+ if(z < 1 && bz < 1){
+    hrs.innerHTML = 23, bhrs.innerHTML = 23
+    let a = days.innerHTML, ba = bdays.innerHTML
+    days.innerHTML = a - 1, bdays.innerHTML = ba - 1
+  }
+  // let x = secs.innerHTML
+  // let bx = bsecs.innerHTML
+  if(x < 10 || bx < 10 ){
+    secs.innerHTML = "0" + x 
+    bsecs.innerHTML = "0" + bx
+  }
+  // for(;y < 10; ){
+  //   mins.innerHTML = "0" + y
+  //   bmins.innerHTML = "0" + by
+  // }
+  // for(;x < 10; ){
+  //   secs.innerHTML = "0" + x
+  //   bsecs.innerHTML = "0" + bx
+  // }
+  }, 1000);
+  
+
+  btm.onchange =  function flip(){
+    btm.style.transform = "rotateX(-150deg)"
+    btm.style.transition = "transform 1s"
+  }
+  o
+  // || y < 10 || by < 10 || z < 10 || bz < 10 || a < 10 || ba < 10
+  // mins.innerHTML = "0" + y
+  //   bmins.innerHTML = "0" + by
+  // window.onload = timer;
+  // flip.onchange = function hover(){
+  //   let flip = document.querySelector("ctndwn")
+  //   let flip ="rotateX(-150deg);"
+  // }
+  </script>
+</body>
+</html>
