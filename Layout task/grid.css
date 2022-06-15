@@ -13,9 +13,12 @@ main
 {
     display: grid;
     grid-template-areas:
-    'sdn sv lux'
+    'a a a b'
+    'c c d d'
+    'c c e e'
     ;
-    width: 80%;
+    gap: 10px;
+    width: 50%;
     margin: auto;
 }
 div
@@ -23,78 +26,28 @@ div
     padding: 2em;
     text-align: center;
 }
-h2
+.a
 {
-    padding-bottom: 38px;
-    padding-top: 25px;
-    color: white;
-    /* margin-left: 50px; */
-    font-size: 30px;
-    transform: scale(0.7, 1.2);
+    grid-area: a;
+    background-color: light-red;
 }
-p
+.b
 {
-    color: white;
-    width: 46%;
-    margin: auto;
+    grid-area: b;
+    background-color: light-yellow;
 }
-.sdn
+.c
 {
-    background-color: hsl(26, 100%, 55%);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    grid-area: sdn;
+   grid-area: c;
+   background-color: light-green;
 }
-.sv
+.d
 {
-    background-color: #17686b;
-    grid-area: sv;
+   grid-area: d;
+   background-color: light-blue;
 }
-.lux
+.e
 {
-    background-color: #085245;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    grid-area: lux;
-}
-button
-{
-    background-color: white;
-    border: none;
-    border-radius: 30px;
-    height: 50px;
-    width: 134px;
-    /* margin-left: 88px;*/
-    margin-top: 143px; 
-}
-button:hover
-{
-    color: white;
-}
-.sdnb
-{
-    color: hsl(25, 100%, 94%);
-}
-.sdnb:hover
-{
-    background-color: hsl(26, 100%, 55%);
-    border: 1px solid white;
-}
-.svb
-{
-    color: #26B5C0;
-}
-.svb:hover
-{
-    background-color: #17686b;
-    border: 1px solid white;
-}
-.luxb
-{
-    color: #19B89D;
-}
-.luxb:hover
-{
-    background-color: #085245;
-    border: 1px solid white;
+   grid-area: e;
+   background-color: light-blue; 
 }
