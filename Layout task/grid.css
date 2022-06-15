@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Kumbh Sans', sans-serif;
+    place-items: center;
+    min-height: 100vh;
+}
+main
+{
+    display: grid;
+    grid-template-areas:
+    'sdn sv lux'
+    ;
+    width: 80%;
+    margin: auto;
+}
+div
+{
+    padding: 2em;
+    text-align: center;
+}
+h2
+{
+    padding-bottom: 38px;
+    padding-top: 25px;
+    color: white;
+    /* margin-left: 50px; */
+    font-size: 30px;
+    transform: scale(0.7, 1.2);
+}
+p
+{
+    color: white;
+    width: 46%;
+    margin: auto;
+}
+.sdn
+{
+    background-color: hsl(26, 100%, 55%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    grid-area: sdn;
+}
+.sv
+{
+    background-color: #17686b;
+    grid-area: sv;
+}
+.lux
+{
+    background-color: #085245;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid-area: lux;
+}
+button
+{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 134px;
+    /* margin-left: 88px;*/
+    margin-top: 143px; 
+}
+button:hover
+{
+    color: white;
+}
+.sdnb
+{
+    color: hsl(25, 100%, 94%);
+}
+.sdnb:hover
+{
+    background-color: hsl(26, 100%, 55%);
+    border: 1px solid white;
+}
+.svb
+{
+    color: #26B5C0;
+}
+.svb:hover
+{
+    background-color: #17686b;
+    border: 1px solid white;
+}
+.luxb
+{
+    color: #19B89D;
+}
+.luxb:hover
+{
+    background-color: #085245;
+    border: 1px solid white;
+}
