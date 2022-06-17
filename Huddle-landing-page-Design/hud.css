@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topnav
+{
+    width: 85%;
+    margin: auto;
+    /* background-color: hsl(193, 100%, 96%);
+    background-image: url(./images/bg-hero-desktop.svg);
+    z-index: 1; */
+    grid-area: topnav;
+}
+.navbtn
+{
+    float: right;
+    width: 141px;
+}
+button
+{
+    border: none;
+    border-radius: 38px;
+    height: 45px;
+    box-shadow: 0px 7px 15px gray;
+}
+.pnk
+{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    width: 232px;
+    margin: 35px 8px 1px 0px;
+}
+.ftct
+{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(./images/bg-hero-desktop.svg);
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-areas:
+    'topnav topnav topnav topnav'
+    'ftct1 ftct2 ftct2 ftct2'
+    ;
+    align-items: center;
+    /* display: flex; */
+}
+.org
+{
+    height: 429px;
+    width: 588px;
+}
+.ftct1
+{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin: auto;
+    margin-left: 87px;
+    grid-area: ftct1;
+}
+.ftct1>p
+{
+    padding-top: 30px;  
+    width: 123%;
+}
+.ftct2
+{
+    position: relative;
+    left: -93px;
+    grid-area: ftct2;
+}
+.sdct, .tdct, .fhct, footer
+{
+    height: 440px;
+}
+.det
+{
+    height: 357px;
+    width: 400px
+}
+.sdct, .tdct, .fhct
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border: 3px solid gray;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.sdct1, .tdct2, .fhct1
+{
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+.sdct2, .tdct1, .fhct2
+{
+    width: 40%;
+    margin: auto;
+}
+.fhct
+{
+    margin-bottom: 150px;
+}
+.ffct
+{
+    width: 40%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    background-color: white;
+}
+.ffct>button
+{
+    width: 56%;
+    margin: 35px 0px 35px 0px;
+}
+footer
+{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 70px;
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+}
+ul
+{
+    list-style: none;
+    margin: auto;
+}
+.lis1, .lis4
+{
+    width: 30%;
+    text-align: left;
+}
+.lis2, .lis3
+{
+    margin-top: 49px;
+    width: 20%;
+}
+.fp
+{
+    width: 77%;
+    margin: -14px 0px 0px 31px;
+}
+li
+{
+    margin-bottom: 30px;
+}
+li:hover
+{
+    /* border-bottom: 2px solid white; */
+    text-decoration: underline;
+}
+@media(max-width:375px)
+{
+    .topnav
+    {
+        width: 90%;
+        margin: 20px 0px 70px 0px;
+    }
+    .navbtn
+    {
+        height: 20px;
+        width: 94px;
+    }
+    .ftct
+    {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    .tl
+    {
+        height: 20px;
+        width: 99px;
+    }
+    .pnk
+{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    width: 204px;
+    height: 30px;
+    margin: 35px 8px 1px 0px;
+}
+    .org
+{
+    height: 255px;
+    width: 80%;
+    margin-left: 129px;
+}
+.ftct1
+{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: auto;
+    text-align: center;
+}
+.ftct1>p
+{
+    width: 100%;
+    margin: auto;
+}
+p br
+{
+    display: none;
+}
+.ftct1>button
+{
+    width: 64%;
+    align-self: center;
+}
+.ftct2
+{
+    width: 100%;
+    margin: auto;
+}
+.sdct, .fhct
+{
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.tdct
+{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.det
+{
+    height: 194px;
+    width: 219px;
+}
+.sdct1, .tdct2, .fhct1
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.sdct2, .tdct1, .fhct2
+{
+    width: 70%;
+    margin: auto;
+}
+.ffct
+{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px -1px 13px grey;
+}
+footer
+{
+    height: 933px;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    font-size: 12px;
+    text-align: left;
+}
+ul
+{
+    list-style: none;
+    margin: auto;
+}
+.lis1, .lis4
+{
+    width: 90%;
+}
+.lis2, .lis3
+{
+    width: 90%;
+    margin-top: 5px;
+}
+.lis4>ul
+{
+    display: flex;
+}
+.last
+{
+    position: relative;
+    top: 130px
+}
+}
