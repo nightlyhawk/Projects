@@ -47,6 +47,9 @@ button
     width: 232px;
     margin: 35px 8px 1px 0px;
 }
+button:hover
+{
+    opacity: 0.5;
 .ftct
 {
     background-color: hsl(193, 100%, 96%);
